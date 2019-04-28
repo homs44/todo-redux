@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+}
+
+.section {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.crimson {
+  background-color: crimson;
+}
+
+.coral {
+  background-color: coral;
+}
+
+.todo {
+  padding: 16px;
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px #bbb;
+}
+
+.input-content {
+  padding: 8px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bt {
+  display: block;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+}
+
+.bt:hover {
+  opacity: 0.7;
+}
