@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
+import {addTodo} from '../redux/todoReducer'
 
 class AddTodo extends Component {
 
@@ -45,4 +47,11 @@ class AddTodo extends Component {
     }
 }
 
-export default AddTodo;
+const mapDispatchToProps = (dispatch)=>{
+    return {
+        // content를 파라미털로 넘겨받아서 ADD_TODO 액션을 만들어서 dispatch를 호출하는 함수
+        add: (content)=>dispatch(addTodo(content))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(AddTodo);
